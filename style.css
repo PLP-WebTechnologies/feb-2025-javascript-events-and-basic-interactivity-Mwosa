@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .gallery img {
+    border: 2px solid #ccc;
+    transition: transform 0.3s;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  #mainImage {
+    width: 350px;
+    height: 200px; 
+  }
+  
+  .thumbs img {
+    margin: 5px;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  .tabContent {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .activeTab {
+    display: block;
+    background: #f9f9f9;
+  }
+  
+  input {
+    display: block;
+    margin: 8px 0;
+    padding: 8px;
+    width: 300px;
+  }
+  
+  #formFeedback {
+    margin-top: 10px;
+    color: red;
+  }
+  

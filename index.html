@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Events & Interactivity</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>JavaScript Events & Interactivity</h1>
+
+  <!-- Event buttons -->
+  <button id="clickBtn">Click Here!</button>
+  <button id="hoverBtn">Hover Over!</button>
+  <button id="dblClickBtn">Double Click Here!</button>
+
+  <!-- Keypress detection -->
+  <p>Press any key: <span id="keyDisplay">_</span></p>
+
+  <!-- Image gallery -->
+  <div class="gallery">
+    <img id="mainImage" src="images/img 5.jpg" alt="Main Image">
+    <div class="thumbs">
+      <img src="images/img (2).jpg" onclick="changeImage(this)">
+      <img src="images/img (3).jpg" onclick="changeImage(this)">
+      <img src="images/img (4).jpg" onclick="changeImage(this)">
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab" onclick="showTab('tab1')">Tab 1</button>
+    <button class="tab" onclick="showTab('tab2')">Tab 2</button>
+    <div id="tab1" class="tabContent">Content for Tab 1</div>
+    <div id="tab2" class="tabContent">Content for Tab 2</div>
+  </div>
+
+  <!-- Form -->
+  <form id="myForm">
+    <input type="text" id="name" placeholder="Name" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password (min 8 chars)" required />
+    <button type="submit">Submit</button>
+    <p id="formFeedback"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
